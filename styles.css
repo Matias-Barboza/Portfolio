@@ -36,7 +36,7 @@ html{
     text-decoration: none;
     border: 2px solid #1286c9;
     border-radius: 50%;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
 .contenedor-header header ul{
     display: flex;
@@ -63,7 +63,8 @@ html{
 }
 /* SECCION INICIO */
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,8), rgba(30,35,38,1));
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/me1.png);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -345,6 +346,9 @@ html{
     background-color: #252A2E;
     color: #fff;
     font-size: 18px;
+}
+.contacto textarea{
+    resize: none;
 }
 .contacto button{
     cursor: pointer;
