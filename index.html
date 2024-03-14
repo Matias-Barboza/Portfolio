@@ -7,7 +7,6 @@
     <title>Portfolio personal - Matias Barboza</title>
 
     <link rel="stylesheet" href="styles.css">
-    <source src="" type="">
 
   </head>
   <body>
@@ -20,13 +19,13 @@
           </div>
           <nav id="nav">
               <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#sobremi">SOBRE MÍ</a></li>
-                <li><a href="#curriculum">CURRICULUM</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
               </ul>
           </nav>
-          <div class="nav-responsive">
+          <div class="nav-responsive" onclick="mostrarOcultar()">
             <i class="fa-solid fa-bars"></i>
           </div>
         </header>
@@ -40,8 +39,8 @@
             <h1>Matias Barboza</h1>
             <h2>Software Developer</h2>
             <div class="redes">
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#"><i class="fa-brands fa-square-github"></i></a>
+              <a href="http://www.linkedin.com/in/matias-barboza" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Matias-Barboza" target="_blank"><i class="fa-brands fa-square-github"></i></a>
             </div>
             <div class="open-to-work">
               <p>Open to Work <i class="fa-solid fa-circle-check"></i></p>
@@ -50,16 +49,15 @@
         </div>
     </section>
 
-    <!-- SECCIÓN SOBRE MÍ-->
+    <!-- SECCIÓN SOBRE MÍ -->
     <section id="sobremi" class="sobremi">
       <div class="contenido-seccion">
-        <h2>Sobre mí</h2>
+        <h2>SOBRE MÍ</h2>
         <p>Hola, soy <span>Matias Barboza</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iure quia, alias reiciendis nulla animi doloribus provident quam placeat optio sequi nemo tempora nobis inventore architecto maiores dolorem quibusdam minima.</p>
 
+        <!--Conocimientos-->
         <div class="fila">
-
           <div class="col">
-            <!--Conocimientos-->
             <h3>Poseo conocimientos en:</h3>
 
             <div class="contenedor-conocimientos">
@@ -76,8 +74,6 @@
                 <div class="conocimiento">
                   <img class="imgLenguajes" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" />
                 </div>
-              </div>
-              <div class="fila">
                 <div class="conocimiento">
                   <img class="imgLenguajes" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" alt="Java" />
                 </div>
@@ -91,30 +87,138 @@
                   <img class="imgLenguajes" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="GitHub"/>
                 </div>
               </div>
-              </div>
-
+            </div>
           </div>
         </div>
         
         <!--Proyectos-->
         <div class="fila">
-          
+          <div class="col">
+            <h3>Proyectos en los que trabajé:</h2>
+
+            <div class="contenedor-proyectos">
+              <div class="fila">
+                <div class="proyecto">
+                  <div class="titulo">
+                    <h4>Desktop App Gimnasio</h4>
+                  </div>
+                  <div class="imgs">
+                    <a href="https://github.com/Matias-Barboza/DesktopAppGimnasioGenerica" target="_blank">
+                      <img class="img-proyecto" src="img/proyect1.png" alt="Desktop App Gimnasio Genérica">
+                    </a>
+                    <img class= "tecnología-proyecto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="Tecnología utilizada (C#)">
+                    <img class="tecnología-proyecto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="Tecnología utilizada (SQL Server)" />
+                  </div>
+                  <div class="breve-descripcion">
+                    <p>Aplicación CRUD para gestión de socios y cuotas de un gimnasio.</p>
+                  </div>
+                </div>
+                <div class="proyecto">
+                  <div class="titulo">
+                    <h4>Gestor de historias clínicas</h4>
+                  </div>
+                  <div class="imgs">
+                    <a href="https://github.com/Matias-Barboza/DesktopAppGimnasioGenerica" target="_blank">
+                      <img class="img-proyecto" src="img/proyect2.png" alt="Desktop App Gimnasio Genérica">
+                    </a>
+                    <img class= "tecnología-proyecto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="Tecnología utilizada (C#)">
+                    <img class="tecnología-proyecto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="Tecnología utilizada (SQL Server)" />
+                  </div>
+                  <div class="breve-descripcion">
+                    <p>Aplicación CRUD para administración de pacientes, citas e historias clínicas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="fila">
+                <div class="proyecto">
+                  <div class="titulo">
+                    <h4>LUDO Game</h4>
+                  </div>
+                  <div class="imgs">
+                    <a href="https://github.com/AlejoCzombos/TPI_LUDO" target="_blank">
+                      <img class="img-proyecto" src="img/proyect3.png" alt="Desktop App Gimnasio Genérica">
+                    </a>
+                    <img class= "tecnología-proyecto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="Tecnología utilizada (C#)">
+                  </div>
+                  <div class="breve-descripcion">
+                    <p>Recreación del juego de mesa LUDO. Proyecto realizado en equipo.</p>
+                  </div>
+                </div>
+                <div class="proyecto">
+                  <div class="titulo">
+                    <h4>Blue Eyes Of Death</h4>
+                  </div>
+                  <div class="imgs">
+                    <a href="https://github.com/MaksimchukFL/TIF-LaboratorioII" target="_blank">
+                      <img class="img-proyecto" src="img/proyect5.png" alt="Desktop App Gimnasio Genérica">
+                    </a>
+                    <img class= "tecnología-proyecto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Tecnología utilizada (Java)" >
+                  </div>
+                  <div class="breve-descripcion">
+                    <p>Juego basado en texto tipo elige tu propia historia.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!--Cursos-->
         <div class="fila">
           
         </div>
-        
+      </div>
+    </section>
+
+    <!-- SECCIÓN CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
         <!--Descargar CV-->
+        <h2>CURRICULUM VITAE</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias distinctio quas commodi ad officiis error autem quibusdam perspiciatis iusto nulla. Sit quam nemo saepe ratione ad quas possimus molestias maxime.</p>
+          <div class="fila">
+            <div class="col">
+              <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+              </button>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
         <div class="fila">
-          <button id="curriculum">
-            Descargar CV <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
-          </button>
+          <!--Formulario-->
+          <div class="col">
+            <input type="text" placeholder="Tú nombre">
+            <input type="text" placeholder="Teléfono">
+            <input type="text" placeholder="Dirección de correo electrónico">
+            <input type="text" placeholder="Asunto">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje aquí..."></textarea>
+            <button>
+              Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer>
+      <a href="#inicio" class="up">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="http://www.linkedin.com/in/matias-barboza" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Matias-Barboza" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
