@@ -254,6 +254,38 @@ html{
     width: 50px;
     height: 50px;
 }
+.sobremi .fila .col .contenedor-proyectos .proyecto .tooltip{
+    position: relative;
+    display: inline-block;
+}
+.sobremi .fila .col .contenedor-proyectos .proyecto .tooltip .tooltiptext{
+    visibility: hidden;
+    width: 60px;
+    background-color: #073149;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -30px;
+    transition: .3s;
+}
+.sobremi .fila .col .contenedor-proyectos .proyecto .tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+.sobremi .fila .col .contenedor-proyectos .proyecto .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #073149 transparent transparent transparent;
+  }
 .sobremi .fila .col .contenedor-proyectos .proyecto .breve-descripcion p{
     padding: 0px 10px 0 10px;
     line-height: 12px;
@@ -283,11 +315,18 @@ html{
     line-height: 22px;
     margin-bottom: 20px;
 }
+.curriculum .contenido-seccion p span{
+    color: #1286c9;
+    font-weight: bold;   
+}
 .curriculum .fila{
     display: flex;
     justify-content: center;
 }
-.curriculum button{
+.curriculum a{
+    text-decoration: none;
+}
+.curriculum a{
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -300,7 +339,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.curriculum button .overlay{
+.curriculum a .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -310,7 +349,7 @@ html{
     z-index: -1;
     transition: 1s;
 }
-.curriculum button:hover .overlay{
+.curriculum a:hover .overlay{
     width: 100%;
 }
 /* SECCIÓN CONTACTO */
