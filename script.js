@@ -16,3 +16,9 @@ function seleccionar(){
     document.getElementById("nav").classList="";
     menuVisible = false;
 }
+
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+}

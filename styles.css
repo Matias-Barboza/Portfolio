@@ -66,7 +66,7 @@ html{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/me1.png);
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -78,11 +78,12 @@ html{
     margin: auto;
     text-align: center;
     border-radius: 40px;
+    height: 700px;
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
     border: 5px solid #1286c9;
-    display: block;
+    display: flex;
     width: 80%;
     margin: auto;
     border-radius: 100%;
@@ -117,7 +118,13 @@ html{
 .inicio .contenido-banner .redes a:hover{
     background-color: #1286c9;
 }
-.inicio .contenido-banner .contenedor-img .open-to-work p{
+.inicio .contenido-banner .contenedor-img{
+    height: auto;
+}
+.inicio .contenido-banner .contenedor-informacion{
+    height: 40vh;
+}
+.inicio .contenido-banner .open-to-work p{
     color: rgb(55, 209, 106);
     border: 1px solid;
     border-radius: 10px;
@@ -127,7 +134,7 @@ html{
     display: inline-block;
     transition: .3s;
 }
-.inicio .contenido-banner .contenedor-img .open-to-work p:hover{
+.inicio .contenido-banner .open-to-work p:hover{
     color: #fff;
     background-color: rgb(55, 209, 106);
 }
@@ -222,8 +229,8 @@ html{
     border: 2px solid #0E6A9E;
     border-radius: 2%;
     background-color: #073149;
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    height: auto;
     margin: 0 20px 20px;
     transition: .3s;
 }
@@ -271,7 +278,6 @@ html{
     bottom: 100%;
     left: 50%;
     margin-left: -30px;
-    transition: .3s;
 }
 .sobremi .fila .col .contenedor-proyectos .proyecto .tooltip:hover .tooltiptext{
     visibility: visible;
