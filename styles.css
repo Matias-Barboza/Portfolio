@@ -133,6 +133,7 @@ html{
     line-height: 42px;
     display: inline-block;
     transition: .3s;
+    cursor: default;
 }
 .inicio .contenido-banner .open-to-work p:hover{
     color: #fff;
